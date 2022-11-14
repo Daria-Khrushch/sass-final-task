@@ -1,0 +1,14 @@
+// utils
+@import './utils/functions';
+@import './utils/mixins';
+@import './utils/variables';
+
+// base
+@import './base/reset';
+@import './base/typography';
+
+// sections
+@import './sections/hero';
+@import './sections/nav';
+@import './sections/services'
+

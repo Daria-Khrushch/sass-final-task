@@ -1,0 +1,83 @@
+@use "../utils/functions" as *;
+
+.services {
+  background-color: $primary-bg-color;
+  padding-top: rem(50);
+  padding-bottom: rem(105);
+
+  &__container:not(:last-child){
+    margin-bottom: rem(125);
+  }
+
+  &__title {
+    font-size: rem(30);
+    text-align: center;
+    color: $text-color-light;
+    text-transform: capitalize;
+    margin-bottom: rem(50);
+
+    @include breakpoint(desktop) {
+      font-size: rem(50);
+    }
+  }
+
+  &__list {
+    @include breakpoint(tablet) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: rem(10);
+    }
+    @include breakpoint(desktop) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: rem(50);
+    }
+  }
+
+  &__list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    &__title {
+      @include servicesTitleDecor($accent-color-one);
+    }
+
+    &__title--green{
+        @include servicesTitleDecor($accent-color-two);
+    }
+
+    &__title--grey{
+        @include servicesTitleDecor(#B5B7B6);
+    }
+
+    &__content {
+      font-weight: 300;
+      font-size: rem(14);
+      line-height: 145%;
+      margin-bottom: rem(25);
+
+      @include breakpoint(desktop) {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.services__list-item__icon-wrapper--gold {
+  @include servicesIcon($accent-color-one);
+}
+
+.services__list-item__icon-wrapper--green {
+  @include servicesIcon($accent-color-two);
+}
+
+.services__list-item__icon--wrapper--green-around{
+    @include servicesIcon($primary-bg-color);
+    border: 3px solid $accent-color-two;
+}
+
+.services__list-item__icon--wrapper--grey-around{
+    @include servicesIcon($primary-bg-color);
+        border: 3px solid #B5B7B6;
+}

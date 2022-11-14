@@ -1,0 +1,40 @@
+@use "../utils/functions" as *;
+
+.nav {
+  background-color: rgba(52, 52, 52, 1);
+  color: $white;
+  font-weight: 300;
+  font-size: rem(13);
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: rem(15);
+    gap: rem(15);
+
+    @include breakpoint(tablet) {
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: end;
+    }
+
+    @include breakpoint(desktop) {
+      justify-content: space-between;
+      padding: rem(8);
+    }
+  }
+
+  &__menu {
+      @include breakpoint(desktop) {
+        display: flex;
+
+        &-item + &-item {
+            margin-left: rem(20);
+        }
+      }
+
+  }
+}

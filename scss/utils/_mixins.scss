@@ -1,0 +1,41 @@
+@mixin breakpoint($size) {
+  @media screen and (min-width: map-get($breakpoints, $size)) {
+    @content;
+  }
+}
+
+@mixin servicesIcon($color) {
+  background-color: $color;
+  width: rem(85);
+  height: rem(85);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: rem(30);
+}
+
+@mixin servicesTitleDecor($color) {
+  font-size: 1rem;
+  line-height: rem(19);
+  text-align: center;
+  text-transform: uppercase;
+  color: $main-text-color;
+  position: relative;
+  margin-bottom: rem(25);
+
+  @include breakpoint(desktop) {
+    max-width: rem(128);
+  }
+
+  &::after {
+    content: "";
+    width: em(35);
+    height: rem(3);
+    background-color: $color;
+    position: absolute;
+    bottom: rem(-10);
+    left: 50%;
+    margin-left: rem(-17.5);
+  }
+}

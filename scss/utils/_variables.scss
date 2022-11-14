@@ -1,0 +1,23 @@
+@use '../utils/functions' as*;
+
+//colors
+$primary-bg-color: #F5F5F5;
+$white: #FFFFFF;
+$main-text-color: #212121;
+$text-color-dark: #424242;
+$text-color-light: #999B9A;
+$accent-color-one: #DCCE90;
+$accent-color-two: #3D948E;
+$footer-bg-light: #383838;
+$on-footer-light: #929292;
+$footer-bg-dark: #414141;
+$on-footer-light-dark: #595959;
+
+//breakpoints
+
+$breakpoints:(
+"mobile": rem(480),
+"tablet": rem(768),
+"desktop": rem(1200),
+)
+

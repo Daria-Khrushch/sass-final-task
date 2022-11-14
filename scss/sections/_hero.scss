@@ -1,0 +1,115 @@
+@use "../utils/functions" as *;
+
+.hero {
+  background-image: url("../../images/header-background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: rem(102.75) 0;
+  position: relative;
+  margin-bottom: rem(10);
+
+  &__logo {
+    width: rem(160);
+    @include breakpoint(desktop) {
+            width: rem(179);
+        }
+  }
+
+  &::after {
+    content: "";
+    width: em(300);
+    height: rem(10);
+    background-color: $accent-color-two;
+    position: absolute;
+    bottom: rem(-10);
+    left: 50%;
+    margin-left: rem(-150);
+
+    @include breakpoint(tablet) {
+        width: em(780);
+        margin-left: rem(-390);
+        }
+                 @include breakpoint(desktop) {
+                     width: em(1175);
+                     margin-left: rem(-587.5);
+                 }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    width: rem(350);
+
+    @include breakpoint(tablet) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+        width: rem(700);
+    }
+        @include breakpoint(desktop) {
+          margin: 0;
+        }
+
+    &-item {
+      width: rem(175);
+      height: rem(175);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $white;
+      text-align: center;
+      font-weight: 400;
+      font-size: rem(23.775);
+      line-height: rem(29);
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    @include breakpoint(desktop) {
+            width: rem(237.75);
+                height: rem(237.75);
+        }
+
+      &__wrapper {
+        max-width: rem(150);
+      }
+
+      &--one {
+        background-color: $white;
+      }
+      &--two {
+        background-image: linear-gradient(
+            rgba(0, 73, 71, 0.35),
+            rgba(0, 73, 71, 0.35)
+          ),
+          url(../../images/hero-two.png);
+      }
+      &--three {
+        background-image: url("../../images/hero-three.png");
+      }
+      &--four {
+        background-image: url("../../images/hero-four.png");
+      }
+      &--five {
+        background-image: linear-gradient(
+            rgba(15, 87, 82, 0.1),
+            rgba(15, 87, 82, 0.1)
+          ),
+          url("../../images/hero-five.png");
+      }
+      &--six {
+        background-image: url(../../images/hero-six.png);
+      }
+      &--seven {
+        background-image: linear-gradient(
+            rgba(0, 73, 71, 0.35),
+            rgba(0, 73, 71, 0.35)
+          ),
+          url("../../images/hero-seven.png");
+      }
+      &--eight {
+        background-color: $accent-color-two;
+      }
+    }
+  }
+}
