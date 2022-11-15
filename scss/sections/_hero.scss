@@ -16,9 +16,6 @@
     }
   }
 
-  &::after {
-    @include decorLine;
-  }
 
   &__list {
     display: grid;
@@ -97,7 +94,7 @@
           url("../../images/hero-seven.png");
       }
       &--eight {
-        background-color: $accent-color-two;
+        background-color: $primary-accent;
       }
     }
   }

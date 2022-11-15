@@ -24,7 +24,24 @@
   }
 
   &::after {
-    @include decorLine;
+    content: "";
+      width: em(300);
+      height: rem(10);
+      background-color: $primary-accent;
+      position: absolute;
+      bottom: rem(-10);
+      left: 50%;
+      margin-left: rem(-150);
+    
+      @include breakpoint(tablet) {
+        width: em(780);
+        margin-left: rem(-390);
+      }
+    
+      @include breakpoint(desktop) {
+        width: em(1175);
+        margin-left: rem(-587.5);
+      }
   }
 
   &__content-container {
@@ -40,7 +57,7 @@
     font-size: rem(55);
     line-height: rem(55);
     text-transform: uppercase;
-    color: $text-color-dark;
+    color: $text-darkest;
     margin-bottom: rem(10);
 
     @include breakpoint(desktop) {
@@ -54,7 +71,7 @@
     font-size: rem(35);
     line-height: rem(35);
     text-transform: capitalize;
-    color: $text-color-dark;
+    color: $text-darkest;
     margin-bottom: rem(35);
   }
 

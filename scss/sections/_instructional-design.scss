@@ -23,7 +23,7 @@
     font-weight: 600;
     font-size: rem(50);
     line-height: rem(60);
-    color: $text-color-light;
+    color: $text-color-grey;
     margin-bottom: rem(50);
   }
   &__img {
@@ -38,7 +38,7 @@
     font-weight: 400;
     font-size: rem(30);
     line-height: rem(36);
-    color: $text-color-dark;
+    color: $text-darkest;
     margin-bottom: rem(30);
   }
 
@@ -46,7 +46,7 @@
     font-weight: 300;
     font-size: 1rem;
     line-height: 150%;
-    color: $text-color-dark;
+    color: $text-darkest;
     margin-bottom: rem(30);
   }
 
@@ -55,7 +55,7 @@
     font-weight: 300;
     font-size: 1rem;
     line-height: 150%;
-    color: $text-color-dark;
+    color: $text-darkest;
 
     &-item {
       display: grid;

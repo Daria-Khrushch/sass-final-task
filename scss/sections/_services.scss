@@ -11,7 +11,7 @@
   &__title {
     font-size: rem(30);
     text-align: center;
-    color: $text-color-light;
+    color: $text-color-grey;
     text-transform: capitalize;
     margin-bottom: rem(50);
 
@@ -39,11 +39,11 @@
     text-align: center;
 
     &__title {
-      @include servicesTitleDecor($accent-color-one);
+      @include servicesTitleDecor($secondary-accent);
     }
 
     &__title--green {
-      @include servicesTitleDecor($accent-color-two);
+      @include servicesTitleDecor($primary-accent);
     }
 
     &__title--grey {
@@ -63,20 +63,49 @@
   }
 }
 
-.services__list-item__icon-wrapper--gold {
-  @include servicesIcon($accent-color-one);
+.gold-wrapper {
+  background-color: $secondary-accent;
+    width: rem(85);
+    height: rem(85);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: rem(30);
 }
 
-.services__list-item__icon-wrapper--green {
-  @include servicesIcon($accent-color-two);
+
+.blue-chill-wrapper {
+  background-color: $primary-accent;
+    width: rem(85);
+    height: rem(85);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: rem(30);
 }
 
-.services__list-item__icon--wrapper--green-around {
-  @include servicesIcon($primary-bg-color);
-  border: 3px solid $accent-color-two;
+.blue-chill-circle {
+  background-color: $bg-light;
+    width: rem(85);
+    height: rem(85);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: rem(30);
+  border: 3px solid $primary-accent;
 }
 
-.services__list-item__icon--wrapper--grey-around {
-  @include servicesIcon($primary-bg-color);
+.grey-circle {
+  background-color: $bg-light;
+    width: rem(85);
+    height: rem(85);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: rem(30);
   border: 3px solid #b5b7b6;
 }

@@ -1,17 +1,20 @@
 @use "../utils/functions" as *;
 
 //colors
-$primary-bg-color: #f5f5f5;
+$primary-accent:#3d948e;
+$secondary-accent: #dcce90;
+
 $white: #ffffff;
-$main-text-color: #212121;
-$text-color-dark: #424242;
-$text-color-light: #999b9a;
-$accent-color-one: #dcce90;
-$accent-color-two: #3d948e;
-$footer-bg-light: #383838;
-$on-footer-light: #929292;
-$footer-bg-dark: #414141;
-$on-footer-light-dark: #595959;
+$text-color-grey: #999b9a; 
+$text-dark: #212121;
+$text-darkest: #424242;
+$on-bg-dark: #929292; 
+$on-bg-darkest: #595959;
+
+$bg-light: #f5f5f5; 
+$bg-dark: #383838; 
+$bg-darkest: #414141; 
+
 
 //breakpoints
 $breakpoints: (
@@ -19,6 +22,14 @@ $breakpoints: (
   "tablet": rem(768),
   "desktop": rem(1200),
 );
+
+//container-width
+$mob-container: rem(370);
+$tablet-container: rem(700);
+$desktop-container: rem(951);
+
+
+//font-size
 
 //animation
 $animation-duration: 250ms;

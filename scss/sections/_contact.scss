@@ -1,5 +1,5 @@
 .contact {
-  background-color: $accent-color-two;
+  background-color: $primary-accent;
   color: $white;
   text-align: center;
   padding: rem(50) 0;
@@ -38,6 +38,12 @@
 
     &__input,
     &__textarea {
+      font-family: "Museo Sans Cyrl";
+        justify-content: flex-start;
+        color: $white;
+        font-weight: 300;
+        font-size: 1rem;
+        line-height: rem(19);
       width: rem(320);
       background-color: rgba(65, 162, 151, 1);
       border-radius: rem(27.5);
@@ -54,6 +60,17 @@
         margin-top: rem(23);
       }
     }
+
+         &__input:focus,
+         &__textarea:focus {
+          color: $white;
+          font-family: "Museo Sans Cyrl";
+            color: $white;
+            font-weight: 300;
+            font-size: 1rem;
+            line-height: rem(19);
+        
+         }
 
     &__input::placeholder,
     &__textarea::placeholder {

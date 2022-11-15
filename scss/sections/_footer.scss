@@ -1,9 +1,9 @@
 .footer {
-  background-color: $footer-bg-light;
+  background-color: $bg-dark;
   font-weight: 300;
   font-size: rem(14);
   line-height: rem(17);
-  color: $on-footer-light;
+  color: $on-bg-dark;
 
   &--light {
     padding: rem(65) 0;
@@ -17,8 +17,8 @@
   }
   &--dark {
     padding: rem(27) 0;
-    background-color: $footer-bg-dark;
-    color: $on-footer-light-dark;
+    background-color: $bg-darkest;
+    color: $on-bg-darkest;
     text-align: center;
   }
 
@@ -34,6 +34,15 @@
       margin-top: rem(75);
     }
   }
+
+    &__list-item {
+      transition-duration: $animation-duration;
+      transition-timing-function: $animation-type;
+    }
+  
+    &__list-item:hover {
+      color: lighten($color: $on-bg-dark, $amount: 20%);
+    }
 
   &__list-item + &__list-item {
     margin-top: rem(20);

@@ -5,6 +5,7 @@
   color: $white;
   font-weight: 300;
   font-size: rem(13);
+  position: relative;
 
   &__container {
     display: flex;
@@ -12,6 +13,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    flex-wrap: wrap;
     padding: rem(15);
     gap: rem(15);
 
@@ -28,12 +30,39 @@
   }
 
   &__menu {
+    &-item {
+      transition-duration: $animation-duration;
+      transition-timing-function: $animation-type;
+    }
+    &-item:hover {
+      color: darken($color: #fff, $amount: 20%);
+    }
     @include breakpoint(desktop) {
       display: flex;
-
       &-item + &-item {
         margin-left: rem(20);
       }
+    }
+  }
+
+  &::after {
+    content: "";
+    width: rem(300);
+    height: rem(10);
+    background-color: $primary-accent;
+    position: absolute;
+    top: rem(-10);
+    left: 50%;
+    margin-left: rem(-150);
+
+    @include breakpoint(tablet) {
+      width: rem(780);
+      margin-left: rem(-390);
+    }
+
+    @include breakpoint(desktop) {
+      width: rem(1175);
+      margin-left: rem(-587.5);
     }
   }
 }

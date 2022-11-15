@@ -4,23 +4,12 @@
   }
 }
 
-@mixin servicesIcon($color) {
-  background-color: $color;
-  width: rem(85);
-  height: rem(85);
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: rem(30);
-}
-
 @mixin servicesTitleDecor($color) {
   font-size: 1rem;
   line-height: rem(19);
   text-align: center;
   text-transform: uppercase;
-  color: $main-text-color;
+  color: $text-dark;
   position: relative;
   margin-bottom: rem(25);
 
@@ -40,30 +29,9 @@
   }
 }
 
-@mixin decorLine {
-  content: "";
-  width: em(300);
-  height: rem(10);
-  background-color: $accent-color-two;
-  position: absolute;
-  bottom: rem(-10);
-  left: 50%;
-  margin-left: rem(-150);
-
-  @include breakpoint(tablet) {
-    width: em(780);
-    margin-left: rem(-390);
-  }
-
-  @include breakpoint(desktop) {
-    width: em(1175);
-    margin-left: rem(-587.5);
-  }
-}
-
 @mixin btn {
   color: $white;
-  background-color: $accent-color-two;
+  background-color: $primary-accent;
   font-weight: 400;
   font-size: 1rem;
   border: 0;
@@ -72,6 +40,6 @@
 
   &:hover,
   &:focus {
-    background-color: lighten($color: $accent-color-two, $amount: 20%);
+    background-color: lighten($color: $primary-accent, $amount: 20%);
   }
 }
