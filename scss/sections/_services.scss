@@ -1,11 +1,10 @@
 @use "../utils/functions" as *;
 
 .services {
-  background-color: $primary-bg-color;
   padding-top: rem(50);
   padding-bottom: rem(105);
 
-  &__container:not(:last-child){
+  &__container:not(:last-child) {
     margin-bottom: rem(125);
   }
 
@@ -43,12 +42,12 @@
       @include servicesTitleDecor($accent-color-one);
     }
 
-    &__title--green{
-        @include servicesTitleDecor($accent-color-two);
+    &__title--green {
+      @include servicesTitleDecor($accent-color-two);
     }
 
-    &__title--grey{
-        @include servicesTitleDecor(#B5B7B6);
+    &__title--grey {
+      @include servicesTitleDecor(#b5b7b6);
     }
 
     &__content {
@@ -72,12 +71,12 @@
   @include servicesIcon($accent-color-two);
 }
 
-.services__list-item__icon--wrapper--green-around{
-    @include servicesIcon($primary-bg-color);
-    border: 3px solid $accent-color-two;
+.services__list-item__icon--wrapper--green-around {
+  @include servicesIcon($primary-bg-color);
+  border: 3px solid $accent-color-two;
 }
 
-.services__list-item__icon--wrapper--grey-around{
-    @include servicesIcon($primary-bg-color);
-        border: 3px solid #B5B7B6;
+.services__list-item__icon--wrapper--grey-around {
+  @include servicesIcon($primary-bg-color);
+  border: 3px solid #b5b7b6;
 }

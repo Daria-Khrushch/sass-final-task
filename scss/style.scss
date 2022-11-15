@@ -4,11 +4,15 @@
 @import './utils/variables';
 
 // base
-@import './base/reset';
+@import './base/base';
 @import './base/typography';
 
 // sections
 @import './sections/hero';
 @import './sections/nav';
-@import './sections/services'
+@import './sections/services';
+@import './sections/design-learning';
+@import './sections/instructional-design';
+@import './sections/contact';
+@import './sections/footer';
 

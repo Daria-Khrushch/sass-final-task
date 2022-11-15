@@ -1,0 +1,41 @@
+.footer {
+  background-color: $footer-bg-light;
+  font-weight: 300;
+  font-size: rem(14);
+  line-height: rem(17);
+  color: $on-footer-light;
+
+  &--light {
+    padding: rem(65) 0;
+
+    .container {
+      @include breakpoint(tablet) {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+  &--dark {
+    padding: rem(27) 0;
+    background-color: $footer-bg-dark;
+    color: $on-footer-light-dark;
+    text-align: center;
+  }
+
+  &__logo {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 300;
+    font-size: rem(12);
+    line-height: rem(14);
+    margin-bottom: rem(30);
+
+    @include breakpoint(tablet) {
+      margin-top: rem(75);
+    }
+  }
+
+  &__list-item + &__list-item {
+    margin-top: rem(20);
+  }
+}

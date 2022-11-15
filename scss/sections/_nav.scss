@@ -28,13 +28,12 @@
   }
 
   &__menu {
-      @include breakpoint(desktop) {
-        display: flex;
+    @include breakpoint(desktop) {
+      display: flex;
 
-        &-item + &-item {
-            margin-left: rem(20);
-        }
+      &-item + &-item {
+        margin-left: rem(20);
       }
-
+    }
   }
 }

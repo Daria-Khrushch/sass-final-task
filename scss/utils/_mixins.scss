@@ -39,3 +39,39 @@
     margin-left: rem(-17.5);
   }
 }
+
+@mixin decorLine {
+  content: "";
+  width: em(300);
+  height: rem(10);
+  background-color: $accent-color-two;
+  position: absolute;
+  bottom: rem(-10);
+  left: 50%;
+  margin-left: rem(-150);
+
+  @include breakpoint(tablet) {
+    width: em(780);
+    margin-left: rem(-390);
+  }
+
+  @include breakpoint(desktop) {
+    width: em(1175);
+    margin-left: rem(-587.5);
+  }
+}
+
+@mixin btn {
+  color: $white;
+  background-color: $accent-color-two;
+  font-weight: 400;
+  font-size: 1rem;
+  border: 0;
+  transition-duration: $animation-duration;
+  transition-timing-function: $animation-type;
+
+  &:hover,
+  &:focus {
+    background-color: lighten($color: $accent-color-two, $amount: 20%);
+  }
+}
