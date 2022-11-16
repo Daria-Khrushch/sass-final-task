@@ -16,7 +16,7 @@
     margin-bottom: rem(50);
 
     @include breakpoint(desktop) {
-      font-size: rem(50);
+      font-size: $font-title-desktop;
     }
   }
 

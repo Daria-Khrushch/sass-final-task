@@ -5,7 +5,7 @@
 }
 
 @mixin servicesTitleDecor($color) {
-  font-size: 1rem;
+  font-size: $primaty-font-size;
   line-height: rem(19);
   text-align: center;
   text-transform: uppercase;
@@ -33,7 +33,7 @@
   color: $white;
   background-color: $primary-accent;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: $primaty-font-size;
   border: 0;
   transition-duration: $animation-duration;
   transition-timing-function: $animation-type;

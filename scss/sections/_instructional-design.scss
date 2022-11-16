@@ -21,7 +21,7 @@
 
   &__title {
     font-weight: 600;
-    font-size: rem(50);
+    font-size: $font-title-desktop;
     line-height: rem(60);
     color: $text-color-grey;
     margin-bottom: rem(50);
@@ -44,7 +44,7 @@
 
   &__paragraph {
     font-weight: 300;
-    font-size: 1rem;
+    font-size: $primaty-font-size;
     line-height: 150%;
     color: $text-darkest;
     margin-bottom: rem(30);
@@ -53,7 +53,7 @@
   &__list {
     text-align: start;
     font-weight: 300;
-    font-size: 1rem;
+    font-size: $primaty-font-size;
     line-height: 150%;
     color: $text-darkest;
 
