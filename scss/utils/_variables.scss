@@ -15,7 +15,6 @@ $bg-light: #f5f5f5;
 $bg-dark: #383838; 
 $bg-darkest: #414141; 
 
-
 //breakpoints
 $breakpoints: (
   "mobile": rem(480),
@@ -28,8 +27,8 @@ $mob-container: rem(370);
 $tablet-container: rem(700);
 $desktop-container: rem(951);
 
-
-//font-size
+//font
+$main-font-family: "Museo Sans Cyrl";
 $font-title-mob: rem(40);
 $font-title-desktop: rem(50);
 $primaty-font-size: 1rem;

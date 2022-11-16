@@ -38,7 +38,7 @@
 
     &__input,
     &__textarea {
-      font-family: "Museo Sans Cyrl";
+      font-family: $main-font-family;
         justify-content: flex-start;
         color: $white;
         font-weight: 300;
@@ -64,7 +64,7 @@
          &__input:focus,
          &__textarea:focus {
           color: $white;
-          font-family: "Museo Sans Cyrl";
+          font-family: $main-font-family;
             color: $white;
             font-weight: 300;
             font-size: $primaty-font-size;
@@ -74,7 +74,7 @@
 
     &__input::placeholder,
     &__textarea::placeholder {
-      font-family: "Museo Sans Cyrl";
+      font-family: $main-font-family;
       justify-content: flex-start;
       color: $white;
       font-weight: 300;
